@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Página 2</title>
+</head>
+<body>
+
+    <div class="contenedor">
+
+         <p> Puedes llevar hasta 10 stickers en total</p>
+
+         <div class="contenedorpequeño">
+
+            <div class="contador">
+
+                <img src="assets/imgs/león.png" alt="">
+
+                <input id="leon" type="number" min="0" onclick="suma()">
+
+            </div>
+
+            <div class="contador">
+
+                <img src="assets/imgs/perro.jpeg" alt="">
+
+                <input id="perro" type="number" min="0" onclick="suma()">
+
+            </div>
+
+            <div class="contador">
+
+                <img src="assets/imgs/rinoceronte.jpeg" alt="">
+
+                <input id="rinoceronte" type="number" min="0" onclick="suma()">
+
+            </div>            
+         </div>
+
+         <p>Llevas <span class="cantidadStickers">0</span> stickers </p>
+
+         <button onclick="verificar()"> Verificar</button>
+
+    </div>
+    
+    <script src="assets/Javascript.js"></script>
+
+</body>
+</html>

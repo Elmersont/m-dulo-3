@@ -1,0 +1,19 @@
+body{
+    background-color: goldenrod;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box{
+    border: black 2px solid;
+    height: 300px;
+    width: 400px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}

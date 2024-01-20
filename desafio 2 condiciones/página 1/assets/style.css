@@ -1,0 +1,23 @@
+body{
+    background-color: goldenrod;
+
+}
+
+.box{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+#imagen{
+    border-radius: 100%;
+}
+
+#imagen:hover{
+    filter: grayscale(40%);
+}
+
+.borderojo {
+    border: red 2px solid;
+}
