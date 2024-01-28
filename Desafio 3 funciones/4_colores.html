@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="box1" style="width: 200px; height: 200px; background-color: blue;">
+
+    </div>
+
+    <div id="box2" style="width: 200px; height: 200px; background-color: red;">
+
+    </div>
+
+    <div id="box3" style="width: 200px; height: 200px; background-color: green;">
+
+    </div>
+
+    <div id="box4" style="width: 200px; height: 200px; background-color: yellow;">
+
+    </div>
+
+    <div id="key" style="width: 200px; height: 200px; border: solid black;">
+
+    </div>
+
+    <script>
+
+        let box1= document.getElementById("box1");
+
+        let box2= document.getElementById("box2");
+
+        let box3= document.getElementById("box3");
+
+        let box4= document.getElementById("box4");
+
+        function pintar(caja) {
+            caja.style.backgroundColor = "black";
+        };
+
+        box1.addEventListener("click", function(){
+            pintar(box1)
+        });
+
+        box2.addEventListener("click", function(){
+            pintar(box2)
+        });
+
+        box3.addEventListener("click", function(){
+            pintar(box3)
+        });
+
+        box4.addEventListener("click", function(){
+            pintar(box4)
+        });
+
+        function backgroundColor(color){
+            let key = document.getElementById("key")
+
+            key.style.backgroundColor = color
+        }
+
+        function agregarElemento(color) {
+            
+            let contenedor = document.querySelector("body");
+            
+            let nuevoElemento = document.createElement("div");
+            
+            nuevoElemento.style.width = "200px";
+
+            nuevoElemento.style.height = "200px";
+
+            nuevoElemento.style.backgroundColor = color;
+
+            contenedor.appendChild(nuevoElemento);
+        }
+
+        document.addEventListener('keydown', function (event) { 
+            if (event.key === 'a' || event.key === "A") {
+                backgroundColor("pink")
+
+            } else if (event.key === 's' || event.key === "S") {
+                backgroundColor("orange") 
+
+            } else if (event.key === 'd' || event.key === "D") {
+                backgroundColor("lightblue")
+
+            } else if (event.key === 'q' || event.key === "Q") {
+                agregarElemento("purple")
+                
+            } else if (event.key === 'w' || event.key === "W") {
+                agregarElemento("grey")
+
+            } else if (event.key === 'e' || event.key === "E") {
+                agregarElemento("brown")
+
+            }
+        })
+
+    </script>
+
+</body>
+</html>
