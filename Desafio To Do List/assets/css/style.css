@@ -1,0 +1,74 @@
+body{
+    background-color: goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    height: 100vh
+}
+
+.conteiner{
+    border: 3px black solid ;
+    padding: 15px;
+    background-color: darkgray;
+    border-radius: 5px;
+}
+
+#btnAgregar{
+    background-color: darkgreen;
+    color: antiquewhite;
+    border-radius: 5px;
+}
+
+.datos{
+    display: flex;
+    padding: 10px;
+
+}
+
+.elementos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.listaElementos{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+ul{
+    margin-top: 0px;
+    padding: 20px;
+    list-style: none;
+}
+
+#eliminar{
+    display: none;
+}
+
+#icon{
+    background-color: antiquewhite;
+    border-radius: 100%;
+}
+
+#listo{
+    display: none;
+}
+
+.textNoListo{
+    text-decoration: none;
+}
+
+.textListo{
+    text-decoration: line-through;
+}
+
+hr{
+    margin: 20px;
+}
+
+#nuevaTarea{
+    width: 60vh;
+}
