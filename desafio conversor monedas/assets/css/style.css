@@ -1,0 +1,39 @@
+body{
+    background-color: #161b33;
+    color: antiquewhite;    
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+hr{
+    border-color: #6778c4;
+    margin-bottom: 30px;
+}
+
+.conversor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #6778c4;
+    border-radius: 5px;
+    background-color:#3a4474 ;
+
+}
+
+.btn{
+    margin-top: 10px;
+    background-color: #9ca7e9;
+    border-radius: 5px;
+    color: antiquewhite;
+}
+
+.grafica{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
